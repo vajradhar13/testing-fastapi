@@ -1,0 +1,64 @@
+{
+  "bugs": [
+    {
+      "file": "app/utils.py",
+      "line": 1,
+      "type": "LINTING",
+      "fix": "remove unused import 'os'"
+    },
+    {
+      "file": "app/utils.py",
+      "line": 2,
+      "type": "LINTING",
+      "fix": "remove unused import 'json'"
+    },
+    {
+      "file": "app/utils.py",
+      "line": 6,
+      "type": "LOGIC",
+      "fix": "change '+' to '-'"
+    },
+    {
+      "file": "app/utils.py",
+      "line": 10,
+      "type": "LOGIC",
+      "fix": "remove duplicate '* tax_rate'"
+    },
+    {
+      "file": "app/utils.py",
+      "line": 13,
+      "type": "TYPE_ERROR",
+      "fix": "change return type to str"
+    },
+    {
+      "file": "app/models.py",
+      "line": 3,
+      "type": "LINTING",
+      "fix": "remove unused import 'uuid'"
+    },
+    {
+      "file": "app/models.py",
+      "line": 11,
+      "type": "SYNTAX",
+      "fix": "add colon after class definition"
+    },
+    {
+      "file": "app/models.py",
+      "line": 18,
+      "type": "TYPE_ERROR",
+      "fix": "change type to List[CartItem]"
+    },
+    {
+      "file": "app/routes.py",
+      "line": 4,
+      "type": "IMPORT",
+      "fix": "remove non-existent module import"
+    },
+    {
+      "file": "app/routes.py",
+      "line": 17,
+      "type": "LOGIC",
+      "fix": "change '>' to '<'"
+    }
+  ]
+}
