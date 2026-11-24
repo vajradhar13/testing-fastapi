@@ -15,7 +15,7 @@ def test_health():
 
 def test_apply_discount():
     """Test apply_discount endpoint - should fail due to logic bug"""
-    response = client.post("/api/cart/discount", params={"price": 100, "discount": 10})
+    response = client.post("/api/cart/apply-discount", json={"price": 100, "discount": 10})
     # With the bug (using + instead of -), final will be 110
     # The check is: if final > price (110 > 100 = True), so it returns error
     # But the test expects it to work correctly and return a valid result
